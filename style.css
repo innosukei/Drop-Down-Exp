@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+    border-radius: 80px;
+}
+
+.button:hover .drop_down{
+    animation: drop_down_reveal 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes drop_down_reveal {
+    0% {
+        width: 250px;
+        height: 0px
+    }
+
+    100% {
+        width: 250px;
+        height: 300px
+    }
+}
+
+.drop_down {
+    margin: 20px;
+    width: 250px;
+    height: 0px;
+    background-color: crimson;
+    color: rgb(0, 0, 0);
+    overflow: hidden;
+    position: relative;
+    Top: 90px;
+right: 80px;
+}
+
+.timpaan {
+    width: 250px;
+    height: 300px;
+    background-color: blue;
+    Top: 30px;
+    left: 90px;
+}
